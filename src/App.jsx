@@ -5,6 +5,7 @@ import TemplatePage from "./pages/templatesPage/template";
 import PricingPage from "./pages/pricingPage/pricing";
 import MyNavbar from "./components/navbar";
 import {useState, useEffect} from "react";
+import "./App.css";
 
 const App = function(){
   const [scrolled, setScrolled] = useState(false);
@@ -17,10 +18,11 @@ const App = function(){
   }, []);
   
 
-
   return (
     <BrowserRouter>
-      <div style={{
+      <div 
+      className={"App"}
+      style={{
         display: "grid",
         gridTemplateRows: "auto 1fr",
         minHeight: "100vh",

@@ -1,0 +1,26 @@
+.App {
+    font-size: 16px;
+}
+@media (max-width: 1024px) {
+    .App {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .App {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .App {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .App {
+        font-size: 10px;
+    }
+}

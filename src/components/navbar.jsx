@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
-import {Button} from "react-bootstrap";
 
 const MyNavbar = function() {
     const [activePage, setActivePage] = useState("Home");
@@ -12,7 +11,7 @@ const MyNavbar = function() {
         <button
         style={{
             padding:"11px 26px", borderRadius:12, border:"none",
-            fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:"0.88rem",
+            fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:"0.88em",
             cursor:"pointer", transition:"all 0.2s",
             boxShadow: primary ? "0 4px 14px rgba(53,37,205,0.28)" : "0 2px 8px rgba(0,0,0,0.12)",
             ...style,
@@ -26,7 +25,7 @@ const MyNavbar = function() {
     return (
         <>
         <nav style={{ display:"flex", justifyContent:"space-between", alignItems:"center", height:64, padding:"0 24px", maxWidth:1280, margin:"0 auto" }}>
-          <span className="brand" style={{ fontSize:"1.3rem", fontWeight:800, color:"var(--primary)", letterSpacing:"-0.02em", cursor:"pointer" }}>
+          <span className="brand" style={{ fontSize:"1em", fontWeight:800, color:"var(--primary)", letterSpacing:"-0.02em", cursor:"pointer" }}>
             Jovial<span style={{ color:"#ff6b35" }}>CV</span>Maker
           </span>
 
