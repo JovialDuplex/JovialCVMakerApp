@@ -113,11 +113,12 @@ transition:border-color 0.2s, color 0.2s, background 0.2s;
 .arrow-btn:hover { border-color:var(--primary); color:var(--primary); background:var(--primary-fixed); }
 .arrow-btn:disabled { opacity:0.3; cursor:default; }
 
+/* design grid templates ---------------------------------- */
 .tab-bar { display:flex; background:var(--surface-container); border-radius:14px; padding:4px; gap:2px; }
 .tab-btn {
 padding:8px 20px; border-radius:10px; border:none;
 background:transparent; font-family:'DM Sans',sans-serif;
-font-size:0.85rem; font-weight:500; cursor:pointer;
+font-size:0.95em; font-weight:500; cursor:pointer;
 color:var(--on-surface-variant); transition:background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 .tab-btn.active { background:#fff; color:var(--primary); font-weight:600; box-shadow:0 2px 8px rgba(53,37,205,0.1); }
@@ -145,19 +146,22 @@ display:flex; align-items:center; justify-content:center;
 display:inline-flex; align-items:center; gap:6px;
 padding:8px 18px; border:1.5px solid var(--primary);
 background:transparent; color:var(--primary); border-radius:99px;
-font-size:0.82rem; font-weight:600; cursor:pointer;
+font-size:0.93em; font-weight:600; cursor:pointer;
 transition:background 0.2s, color 0.2s; font-family:'DM Sans',sans-serif;
 }
 .view-all-btn:hover { background:var(--primary); color:#fff; }
 
+
+/* design statistics section --------------------------------- */
 .stats-strip {
 display:flex; justify-content:center; gap:64px; flex-wrap:wrap;
 padding:48px 24px; background:var(--primary); border-radius:24px; margin:0 24px;
 }
 .stat-item { text-align:center; color:#fff; }
-.stat-num { font-family:'Syne',sans-serif; font-size:2.2rem; font-weight:800; }
-.stat-label { font-size:0.85rem; opacity:0.8; margin-top:2px; }
+.stat-num { font-family:'Syne',sans-serif; font-size:2.2em; font-weight:800; }
+.stat-label { font-size:0.85em; opacity:0.8; margin-top:2px; }
 
+/* design feature cards --------------------------------- */
 .feature-card {
 background:#fff; border-radius:20px; padding:28px;
 border:1.5px solid var(--outline-variant);
@@ -170,7 +174,7 @@ transform:translateY(-4px); border-color:rgba(53,37,205,0.3);
 .feature-icon {
 width:48px; height:48px; background:var(--primary-fixed);
 border-radius:14px; display:flex; align-items:center; justify-content:center;
-margin-bottom:16px; font-size:1.4rem;
+margin-bottom:16px; font-size:1.4em;
 }
 
 .cta-section {

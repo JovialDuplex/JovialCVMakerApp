@@ -7,6 +7,7 @@ const MyNavbar = function() {
     const [mobileOpen, setMobileOpen] = useState(false);
 
     const NAV_LINKS = ["Home", "Help", "Templates", "Pricing"];
+    
     const Btn = ({ children, primary, style={}, ...props }) => (
         <button
         style={{
@@ -25,7 +26,7 @@ const MyNavbar = function() {
     return (
         <>
         <nav style={{ display:"flex", justifyContent:"space-between", alignItems:"center", height:64, padding:"0 24px", maxWidth:1280, margin:"0 auto" }}>
-          <span className="brand" style={{ fontSize:"1em", fontWeight:800, color:"var(--primary)", letterSpacing:"-0.02em", cursor:"pointer" }}>
+          <span className="brand" style={{ fontSize:"1.2em", fontWeight:800, color:"var(--primary)", letterSpacing:"-0.02em", cursor:"pointer" }}>
             Jovial<span style={{ color:"#ff6b35" }}>CV</span>Maker
           </span>
 
@@ -38,7 +39,7 @@ const MyNavbar = function() {
           </div>
 
           <div style={{ display:"flex", alignItems:"center", gap:12 }}>
-            <Btn primary >Créer un CV</Btn>
+            <Btn primary >Create CV</Btn>
             <button
               onClick={() => setMobileOpen(o => !o)}
               className="hamburger"

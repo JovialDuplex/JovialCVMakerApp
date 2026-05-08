@@ -40,7 +40,6 @@ const App = function(){
           <MyNavbar />
         </header>
         <main style={{
-          backgroundColor: "red",
           position: "absolute",
           top: 64, left: 0, right: 0, bottom: 0,
           overflowY: "auto",
